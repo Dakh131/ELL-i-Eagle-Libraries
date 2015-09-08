@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -903,6 +903,43 @@ General-purpose diode for high-speed switching.
 <connect gate="G$1" pin="D" pad="2 4"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FDMC3612" prefix="Q">
+<description>&lt;h3&gt;100V, 12A, 110 mOhm, N-Channel Power Trench MOSFET&lt;/h3&gt;
+
+&lt;p&gt;This N-Channel MOSFET is produced using Fairchild
+Semiconductor‘s advanced Power Trench® process that has
+been especially tailored to minimize the on-state resistance and
+yet maintain superior switching performance.&lt;/p&gt; 
+
+&lt;ul&gt;
+   &lt;li&gt;&lt;a href="http://www.farnell.com/datasheets/1774727.pdf‎"&gt;Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="N_MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="L33" package="MLP8L33">
+<connects>
+<connect gate="G$1" pin="D" pad="5 6 7 8 F1"/>
+<connect gate="G$1" pin="G" pad="4"/>
+<connect gate="G$1" pin="S" pad="1 2 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="L33_HS" package="MLP8L33_HS">
+<connects>
+<connect gate="G$1" pin="D" pad="5 6 7 8 F1"/>
+<connect gate="G$1" pin="G" pad="4"/>
+<connect gate="G$1" pin="S" pad="1 2 3"/>
 </connects>
 <technologies>
 <technology name=""/>
